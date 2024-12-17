@@ -67,7 +67,8 @@ button:focus-visible {
   }
 }
 #main-content {
-  padding: 0px 20px;
+  padding: 50px 20px;
   width: 100%;
   max-width: 1200px;
+  margin: auto;
 }

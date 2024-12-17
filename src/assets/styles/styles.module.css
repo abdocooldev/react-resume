@@ -1,3 +1,15 @@
+/* Global */
+:root {
+  --main-transition: 0.3s linear;
+}
+.flexRow {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Profile */
 .profilePhoto {
   width: 300px;
@@ -15,16 +27,74 @@
 }
 .moreDetails {
 }
-.flexRow {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
-}
 button {
   background-color: seagreen;
   color: #fff;
   user-select: none;
+}
+/* Qualifications */
+
+/* Projects */
+#projects .container {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 50px 20px;
+  flex-wrap: wrap;
+}
+.project {
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: calc(100% / 3 - 15px);
+}
+.projectImg {
+  overflow: hidden;
+  line-height: 0;
+}
+.project img {
+  transition: var(--main-transition);
+  width: 100%;
+}
+.project:hover img {
+  transform: scale(1.05);
+  /* opacity: 0.8; */
+}
+.projectInfo {
+  padding: 15px;
+}
+.projectName {
+  font-size: 24px;
+  margin: 15px 0;
+  transition: var(--main-transition);
+  margin-top: 0;
+}
+.project:hover .projectName {
+  color: var(--red-color);
+}
+.description {
+  font-size: 16px;
+  margin: 15px 0;
+  text-align: left;
+  line-height: 1.6;
+  text-align: center;
+  color: #444;
+}
+.techStack {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.techStack span {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  padding: 5px;
+  border-radius: 10px;
 }

@@ -1,6 +1,7 @@
 import styles from "./assets/styles/styles.module.css";
 import Profile from "./assets/components/Profile";
 import Qualifications from "./assets/components/Qualifications";
+import Projects from "./assets/components/Projects";
 function App() {
   return (
     <>
@@ -8,6 +9,7 @@ function App() {
         <Profile />
         <Qualifications />
       </div>
+      <Projects />
     </>
   );
 }
