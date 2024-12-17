@@ -1,9 +1,13 @@
-// import styles from "./styles/styles.module.css";
+import styles from "./assets/styles/styles.module.css";
 import Profile from "./assets/components/Profile";
+import Qualifications from "./assets/components/Qualifications";
 function App() {
   return (
     <>
-      <Profile />
+      <div className={styles.flexRow}>
+        <Profile />
+        <Qualifications />
+      </div>
     </>
   );
 }
