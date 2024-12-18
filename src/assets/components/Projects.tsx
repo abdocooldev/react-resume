@@ -1,5 +1,5 @@
 import styles from "../styles/styles.module.css";
-import projectsData from "../data/ProjectsData";
+import projectsData from "../data/projectsData.ts";
 import Project from "./Project";
 
 function Projects() {

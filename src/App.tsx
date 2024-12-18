@@ -1,7 +1,7 @@
 import styles from "./assets/styles/styles.module.css";
-import Profile from "./assets/components/Profile";
-import Qualifications from "./assets/components/Qualifications";
-import Projects from "./assets/components/Projects";
+import Profile from "./assets/components/Profile.tsx";
+import Qualifications from "./assets/components/Qualifications.tsx";
+import Projects from "./assets/components/Projects.tsx";
 function App() {
   return (
     <>
