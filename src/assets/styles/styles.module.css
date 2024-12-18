@@ -49,6 +49,7 @@ button {
   overflow: hidden;
   text-align: center;
   width: calc(100% / 3 - 15px);
+  cursor: pointer;
 }
 .projectImg {
   overflow: hidden;
