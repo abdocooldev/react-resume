@@ -6,18 +6,18 @@ const projectsData = [
   {
     id: 1,
     title: "Todo List App",
-    techs: ["React", "Sass", "CSS Modules", "Vite"],
+    techs: ["React", "Sass", "Vite"],
     image: todoImg,
   },
   {
     id: 2,
-    title: "Pomodoro Timer App",
+    title: "Pomodoro App",
     techs: ["React", "Sass", "WebPack"],
     image: pomodoroImg,
   },
   {
     id: 3,
-    title: "React Calculator App",
+    title: "Calculator App",
     techs: ["React", "Sass", "WebPack"],
     image: calculatorImg,
   },

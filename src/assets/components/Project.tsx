@@ -13,7 +13,7 @@ function Project(props: {
         borderRadius: "10px",
         overflow: "hidden",
         textAlign: "center",
-        w: "calc(100% / 3 - 40px / 3)",
+        w: "calc(100% / 3 - 60px / 3)",
         cursor: "pointer",
         "&:hover img": { transform: "scale(1.05)" },
         "&:hover h3": { color: "red.800" },
@@ -33,6 +33,8 @@ function Project(props: {
             m: "16px 0",
             transition: "0.3s linear",
             mt: "0px",
+            lineHeight: "1",
+            fontWeight: "bold",
           })}>
           {title}
         </h3>
@@ -50,7 +52,7 @@ function Project(props: {
             return (
               <span
                 className={css({
-                  fontSize: "12px",
+                  fontSize: "13px",
                   fontWeight: "bold",
                   bgColor: "gray.200",
                   p: "5px",
