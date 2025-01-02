@@ -20,7 +20,7 @@ function Qualifications() {
         <p>Udacity Inc, Online.</p>
       </div>
       <div className="q2">
-        <h3>HTML, CSS, JavaScript, React Camp</h3>
+        <h3>Frontend Technologies Code Camp</h3>
         <p>freeCodeCamp, Online.</p>
       </div>
     </section>

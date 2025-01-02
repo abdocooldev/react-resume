@@ -42,10 +42,10 @@ function About() {
           fontSize: "20px",
           cursor: "pointer",
           transition: "0.3s ease",
-          _hover: { bgColor: "blue.700" },
+          _hover: { bgColor: "blue.700" }, 
         })}
         onClick={toggleShow}>
-        {show ? "Hide" : "Show More"}
+        {show ? "Show Less" : "Show More"}
       </button>
     </div>
   );
