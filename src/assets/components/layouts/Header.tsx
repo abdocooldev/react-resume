@@ -9,7 +9,7 @@ function Header() {
         justifyContent: "center",
         gap: "20px",
         fontSize: "20px",
-        mb: "20px",
+        mb: "50px",
       })}>
       <Link to="/">Home</Link>
       <Link to="/quotes">Quotes</Link>
