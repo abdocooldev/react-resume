@@ -8,7 +8,12 @@ function Gallery() {
       <div
         className={css({
           display: "grid",
-          gridTemplateColumns: "repeat(3,1fr)",
+          gridTemplateColumns: {
+            base: "1fr",
+            sm: "1fr 1fr",
+            md: "repeat(3,1fr)",
+            lg: "repeat(4,1fr)",
+          },
           gap: "30px",
         })}>
         {Images.map(({ id, title, description, image }) => {
@@ -21,6 +26,8 @@ function Gallery() {
                   className={css({
                     borderRadius: "15px",
                     boxShadow: "0 50px 50px -12px rgb(0 0 0 / 0.20)",
+                    transition: "0.3s ease",
+                    _hover: { filter: "brightness(0.5)" },
                   })}
                 />
               </a>

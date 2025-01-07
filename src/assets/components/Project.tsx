@@ -13,7 +13,11 @@ function Project(props: {
         borderRadius: "10px",
         overflow: "hidden",
         textAlign: "center",
-        w: "calc(100% / 3 - 60px / 3)",
+        w: {
+          base: "100%",
+          sm: "calc(100% / 2 - 20px)",
+          md: "calc(100% / 3 - 60px / 3)",
+        },
         cursor: "pointer",
         "&:hover img": { transform: "scale(1.05)" },
         "&:hover h3": { color: "red.800" },

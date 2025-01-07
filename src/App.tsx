@@ -15,7 +15,8 @@ function App() {
           margin: "auto",
           alignItems: "flex-start",
           justifyContent: "space-between",
-          gap: "50px",
+          flexDir: { base: "column", sm: "row" },
+          gap: { base: "50px", mdOnly: "30px" },
           mb: "50px",
         })}>
         <Profile />
@@ -23,7 +24,9 @@ function App() {
           className={css({
             display: "flex",
             gap: "30px",
-            width: "calc(100% - 230px)",
+            width: { base: "100%", sm: "calc(100% - 230px)" },
+            flexDir: { base: "column ", md: "row" },
+            textAlign: { base: "center", sm: "left" },
           })}>
           <About />
           <Qualifications />

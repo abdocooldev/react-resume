@@ -2,14 +2,14 @@ import { useState } from "react";
 import { css } from "../../../styled-system/css";
 
 function About() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   function toggleShow() {
     setShow(!show);
   }
   return (
     <div
       className={css({
-        width: "50%",
+        width: { base: "100%", md: "60%", lg: "50%" },
         "& p": {
           fontSize: "18px",
           lineHeight: "1.6",
@@ -42,7 +42,7 @@ function About() {
           fontSize: "20px",
           cursor: "pointer",
           transition: "0.3s ease",
-          _hover: { bgColor: "blue.700" }, 
+          _hover: { bgColor: "blue.700" },
         })}
         onClick={toggleShow}>
         {show ? "Show Less" : "Show More"}

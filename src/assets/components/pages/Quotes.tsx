@@ -4,7 +4,8 @@ import Header from "../layouts/Header";
 import { css } from "../../../../styled-system/css";
 function Quotes() {
   const [randomQuote, setRandomQuote] = useState<any>({});
-  const [random10Quotes, setrandom10Quotes] = useState<any>([]);
+  const [random10Quotes, setRandom10Quotes] = useState<any>([]);
+  const [noNet, setNoNet] = useState(false);
   useEffect(() => {
     axios
       .get("https://dummyjson.com/quotes/random")
@@ -19,7 +20,7 @@ function Quotes() {
     axios
       .get("https://dummyjson.com/quotes/random/10")
       .then((res) => {
-        setrandom10Quotes(res.data);
+        setRandom10Quotes(res.data);
       })
       .catch((error) => {
         console.log(error);
@@ -39,7 +40,14 @@ function Quotes() {
             <p className={css({ mb: "15px" })}>— {randomQuote.author}</p>
           </>
         ) : (
-          <div className={css({ mb: "15px" })}>Loading...</div>
+          <div className={css({ mb: "15px" })}>
+            {!noNet
+              ? "Loading..."
+              : "Loading... Check Your Internet Connection if it takes a lot of time and refresh."}
+            <div style={{ display: "none" }}>
+              {window.setTimeout(() => setNoNet(true), 1000)}
+            </div>
+          </div>
         )}
 
         <button

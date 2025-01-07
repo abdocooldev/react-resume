@@ -7,7 +7,8 @@ function Header() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: "20px",
+        flexWrap: "wrap",
+        gap: { base: "10px", xs: "20px" },
         fontSize: "20px",
         mb: "50px",
       })}>
