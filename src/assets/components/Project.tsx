@@ -9,10 +9,13 @@ function Project(props: {
       id={"project" + id}
       className={css({
         color: "black",
-        border: "1px solid #ccc",
         borderRadius: "10px",
         overflow: "hidden",
         textAlign: "center",
+        background: "rgba(255, 255, 255, 0.2)",
+        border: "1px solid rgba(255, 255, 255, 0.3)",
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+        backdropFilter: "blur(5px)",
         w: {
           base: "100%",
           sm: "calc(100% / 2 - 20px)",

@@ -29,7 +29,17 @@ function Quotes() {
   return (
     <>
       <Header />
-      <div className={css({ maxW: "600px", m: "auto" })}>
+      <div
+        className={css({
+          maxW: "600px",
+          m: "auto",
+          background: "rgba(255, 255, 255, 0.2)",
+          border: "1px solid rgba(255, 255, 255, 0.3)",
+          borderRadius: "16px",
+          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          backdropFilter: "blur(5px)",
+          padding: "15px",
+        })}>
         <h2
           className={css({ fontSize: "30px", fontWeight: "bold", mb: "30px" })}>
           Quote Of Today:

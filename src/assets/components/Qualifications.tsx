@@ -5,6 +5,13 @@ function Qualifications() {
     <section
       id="qualification"
       className={css({
+        background: "rgba(255, 255, 255, 0.2)",
+        border: "1px solid rgba(255, 255, 255, 0.3)",
+        borderRadius: "16px",
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+        backdropFilter: "blur(5px)",
+        padding: "15px",
+        flexGrow: "1",
         "& p": { fontSize: "18px", lineHeight: "1.6", mb: "15px" },
         "& h3": { fontSize: "18px", fontWeight: "bold", mb: "15px" },
       })}>

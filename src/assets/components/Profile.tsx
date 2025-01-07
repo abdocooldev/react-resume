@@ -11,10 +11,14 @@ function Profile() {
         flexDir: "column",
         w: "300px",
         maxW: "100%",
-        border: "1px solid #a2a2a2",
         p: "20px 15px",
         rounded: "xl",
         m: "0 auto",
+        background: "rgba(255, 255, 255, 0.2)",
+        border: "1px solid rgba(255, 255, 255, 0.3)",
+        borderRadius: "16px",
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+        backdropFilter: "blur(5px)",
       })}>
       <img
         className={css({

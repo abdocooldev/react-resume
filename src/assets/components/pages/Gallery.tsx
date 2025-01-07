@@ -18,7 +18,16 @@ function Gallery() {
         })}>
         {Images.map(({ id, title, description, image }) => {
           return (
-            <div key={id}>
+            <div
+              key={id}
+              className={css({
+                background: "rgba(255, 255, 255, 0.2)",
+                border: "1px solid rgba(255, 255, 255, 0.3)",
+                borderRadius: "16px",
+                boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                backdropFilter: "blur(5px)",
+                padding: "15px",
+              })}>
               <a href={image} target="_blank">
                 <img
                   src={image}

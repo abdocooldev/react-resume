@@ -3,6 +3,17 @@
   font-family: "archivo";
   src: url("./assets/fonts/archivo.ttf");
 }
+body {
+  background-color: aliceblue;
+  background-image: url(./assets/images/triangles-top.svg),
+    url(./assets/images/triangles-bottom.svg);
+  background-repeat: no-repeat;
+  background-position:
+    top left,
+    bottom right;
+  background-size: 30%, 30%;
+  background-attachment: fixed;
+}
 #main-content {
   font-family: "archivo", sans-serif;
   padding: 50px 20px;
